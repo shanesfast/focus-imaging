@@ -9,9 +9,10 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^2.8.3"
+    "astro": "^3.0.0"
   },
   "dependencies": {
-    "open-props": "^1.5.10"
+    "@astrojs/node": "^6.1.0",
+    "open-props": "^1.6.13"
   }
 }
