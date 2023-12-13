@@ -15,6 +15,10 @@ body {
     background-image: var(--gradient-3) , var(--noise-5);
     background-size: cover;
     display: grid;
-    place-content: center;
-    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
 }

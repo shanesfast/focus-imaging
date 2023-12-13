@@ -1,5 +1,6 @@
 ---
-// Component imports and setup JavaScript go here!
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <html lang="en">
@@ -11,13 +12,25 @@
 	<title>Welcome to Astro</title>
 	<style>
 		@import './src/styles/defaults.css';
+
+		.main {
+			display: grid;
+			grid-area: main;
+			align-items: center;
+			justify-items: center;
+			padding: 2rem;
+			text-align: center;
+		}
 	</style>
 </head>
 
 <body>
-	<h3>Welcome to </h3>
-	<h1>Focus Imaging</h1>
-	<p>We have lift-off!!!</p>
+	<Header />
+	<main class="main">
+		<h1>Focus Imaging</h1>
+		<p>We have lift-off!!!</p>
+	</main>
+	<Footer />
 </body>
 
 </html>
