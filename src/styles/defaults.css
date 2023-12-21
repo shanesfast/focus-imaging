@@ -16,7 +16,7 @@ body {
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
     grid-template-areas: 
         "header header header header"
         "main main main main"

@@ -5,10 +5,53 @@
 <style>
     .header {
         grid-area: header;
-        background-color: hsl(0 0% 95% / 0.25);
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: end;
+        gap: 1rem;
+        padding: 10px;
+        /* background: hsla(198, 93%, 18%, 0.25); */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem; 
+        padding: 0.5rem;
+        border-radius: 10%;
+        background: hsl(0 0% 0% / 75%);
+        box-shadow: var(--shadow-3);
+
+        &:hover {
+            box-shadow: var(--shadow-4);
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
+        /* max-width: 200px; */
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        color: var(--gray-7);
+        text-decoration-color: var(--gray-7);
+        font-size: 1rem;
     }
 </style>
 
 <header class="header">
+    <div class="logo-container">
+        <a href="/" class="logo">
+            <img src="/logo.png" alt="Logo" />
+        </a>
+    </div>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Contact Us</a>
+    <a href="#" class="nav-link">Photos</a>
     <slot />
 </header>
