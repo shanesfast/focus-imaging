@@ -6,10 +6,10 @@
     .header {
         grid-area: header;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 1rem;
-        padding: 20px 10px 10px 10px;
+        padding: 40px 10px 10px 40px;
     }
 
     .logo-container {
@@ -38,14 +38,29 @@
     .nav-link-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         gap: 1rem;
+        height: 100%;
     }
 
     .nav-link {
         color: var(--gray-9);
         text-decoration-color: var(--gray-7);
         font-size: 1rem;
+    }
+
+    @custom-media --md-n-above {
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem; 
+            padding: 0.5rem;
+            border-radius: 10%;
+            background: hsl(0 0% 0% / 85%);
+            box-shadow: var(--shadow-3);
+        }
     }
 </style>
 
